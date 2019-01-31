@@ -18,4 +18,4 @@ Desarrollando para el caso de un red privada clase A, tenemos las direcciones:
 * Dirección del otro extremo : 10.0.0.2
 * Dirección de broadcast : 10.0.0.3
 
-
+Utilizamos el simulador packetracer, para probar la red
