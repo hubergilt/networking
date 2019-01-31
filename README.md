@@ -18,4 +18,28 @@ Desarrollando para el caso de un red privada clase A, tenemos las direcciones:
 * Dirección del otro extremo : 10.0.0.2
 * Dirección de broadcast : 10.0.0.3
 
-Utilizamos el simulador packetracer, para probar la red
+Utilizamos el simulador de red "packetracer", contruir y probar la red punto a punto clase A.
+
+## Configuración de la direción IP en el Router A
+```
+enable 
+configure terminal
+ interface Se0/1/0
+  ip address 10.0.0.1 255.255.255.252
+  no shutdown
+   exit
+ exit
+write mem
+```
+
+## Configuración de la direción IP en el Router B
+```
+enable 
+configure terminal
+ interface Se0/1/0
+  ip address 10.0.0.2 255.255.255.252
+  no shutdown
+  exit
+ exit
+write mem
+```

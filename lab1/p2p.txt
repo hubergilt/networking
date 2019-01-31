@@ -1,0 +1,21 @@
+# Para configurar las direcciones IPs del enlace serial 0/1/0 en el Router A y Router B
+
+# Configuración de la direción IP en el Router A
+enable 
+configure terminal
+ interface Se0/1/0
+  ip address 10.0.0.1 255.255.255.252
+  no shutdown
+   exit
+ exit
+write mem
+
+# Configuración de la direción IP en el Router B
+enable 
+configure terminal
+ interface Se0/1/0
+  ip address 10.0.0.2 255.255.255.252
+  no shutdown
+  exit
+ exit
+write mem
