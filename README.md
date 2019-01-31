@@ -43,5 +43,6 @@ configure terminal
  exit
 write mem
 ```
+## Gráfica de red privada de punto a punto clase A
 
-![Grafico de laboratorio 1 red privada clase a de punto a punto](lab1/p2p.png "Red privada clase a de punto a punto")
+![Gráfica de red privada de punto a punto clase A](lab1/p2p.png "Gráfica de red privada de punto a punto clase A")
