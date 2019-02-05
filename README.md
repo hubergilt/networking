@@ -2,8 +2,11 @@
 
 Laboratorio 1 : Construyendo una red IPv4 ...
 
-El diseño de una red IPv4, inicia con la selección de un rango apropiado para las direcciones IP.
-A modo, de ejemplo sencillo empezamos con una red punto a punto, es decir una red de al menos dos miembros, en las distintas redes privadas es: 
+El diseño de una red IPv4, inicia conociendo la cantidad de miembros pertenecientes a la misma (llamados hosts), luego con la selección de un rango apropiado de direcciones IP (existen los rangos de Clase A, B, C, D y E).
+
+El ejemplo más sencillo es una red punto a punto, que tiene dos miembros y puede ser una de las distintas redes privadas: 
+
+La clase D, es para el uso en multicast (un grupo de miembros que tiene asociado una dirección IP) y la clase E, son para fines experimentales.
 
 Red privada | Rango Inicial | Rango Final       | Red punto a punto |
 ------------|---------------|-------------------|-------------------|
