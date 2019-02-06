@@ -1,10 +1,10 @@
 # Networking
 
-Laboratorio 1 : Construyendo una red IPv4 ...
+## Laboratorio 1 : Construyendo y configurando una red IPv4
 
 El diseño de una red IPv4, inicia conociendo la cantidad de miembros pertenecientes a la misma (llamados hosts), luego con la selección de un rango apropiado de direcciones IP (existen los rangos de Clase A, B, C, D y E).
 
-El ejemplo más sencillo es una red punto a punto, que tiene dos miembros y puede ser una de las distintas redes privadas: 
+El ejemplo más sencillo es una red es del tipo punto a punto, la que cuenta con solo dos miembros y pueden de distintos tipos de clase A, B y C.
 
 La clase D, es para el uso en multicast (un grupo de miembros que tiene asociado una dirección IP) y la clase E, son para fines experimentales.
 
@@ -21,7 +21,7 @@ Desarrollando para el caso de un red privada clase A, tenemos las direcciones:
 * Dirección del otro extremo : 10.0.0.2
 * Dirección de broadcast : 10.0.0.3
 
-Utilizamos el simulador de red "packetracer", contruir y probar la red punto a punto clase A.
+Utilizamos el simulador de red "packetracer", para construir, configurar y probar la red punto a punto clase A.
 
 ## Configuración de la direción IP en el Router A
 ```
@@ -46,6 +46,11 @@ configure terminal
  exit
 write mem
 ```
-## Gráfica de red privada de punto a punto clase A
+## Gráfica de red privada de punto a punto tipo clase A
 
 ![Gráfica de red privada de punto a punto clase A](lab1/p2p.png "Gráfica de red privada de punto a punto clase A")
+
+
+Para diseñar una red de otro tamaño, es necesario que el numero de miembros, sea menor a una potencia de dos. Es decir, 4, 8, 16, etc. Al cual se le debe restar 2 (Para reservar la dirección de red y de broadcast)
+
+
