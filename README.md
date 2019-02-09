@@ -15,7 +15,7 @@ Clase B     | 172.16.0.0/12 | 172.31.255.255/12 | 172.16.0.0/30     |
 Clase C     | 192.168.0.0/8 | 192.168.255.255/8 | 192.168.0.0/30    |
 
 
-Desarrollando para el caso de un red privada clase A, tenemos las direcciones:
+Desarrollando para el caso de un red privada clase A, tenemos dos direcciones de miembros (hosts) y sus correspondientes direcciones de red y de difusión:
 * Dirección de red : 10.0.0.0
 * Direccion del primer extremo : 10.0.0.1
 * Dirección del otro extremo : 10.0.0.2
