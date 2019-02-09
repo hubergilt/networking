@@ -16,6 +16,7 @@ Clase C     | 192.168.0.0/8 | 192.168.255.255/8 | 192.168.0.0/30    |
 
 
 Desarrollando para el caso de un red privada clase A, tenemos dos direcciones de miembros (hosts) y sus correspondientes direcciones de red y de difusión:
+
 * Dirección de red : 10.0.0.0
 * Direccion del primer extremo : 10.0.0.1
 * Dirección del otro extremo : 10.0.0.2
@@ -50,7 +51,5 @@ write mem
 
 ![Gráfica de red privada de punto a punto clase A](lab1/p2p.png "Gráfica de red privada de punto a punto clase A")
 
-
-Para diseñar una red de otro tamaño, es necesario que el numero de miembros, sea menor a una potencia de dos. Es decir, 4, 8, 16, etc. Al cual se le debe restar 2 (Para reservar la dirección de red y de broadcast)
-
+Para diseñar una red de otro tamaño, es necesario conocer el numero de miembros de esta, que sea menor a una potencia de dos. Es decir, el numero de mienbros debe ser menor a 4, 8, 16, etc. Asi mismo, se debe considerar la dirección de red y de difusión.
 
