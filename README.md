@@ -1,6 +1,6 @@
 # Networking
 
-## Laboratorio 1 : Construyendo y configurando una red IPv4
+## Laboratorio 1 : Construyendo y configurando una red de enlace IPv4
 
 El diseño de una red IPv4, inicia conociendo la cantidad de miembros pertenecientes a la misma (llamados hosts), luego con la selección de un rango apropiado de direcciones IP (existen los rangos de Clase A, B, C, D y E).
 
@@ -51,5 +51,15 @@ write mem
 
 ![Gráfica de red privada de punto a punto clase A](lab1/p2p.png "Gráfica de red privada de punto a punto clase A")
 
-Para diseñar una red de otro tamaño, es necesario conocer el numero de miembros de esta, que sea menor a una potencia de dos. Es decir, el numero de mienbros debe ser menor a 4, 8, 16, etc. Asi mismo, se debe considerar restar 2 para reservar las direcciones de red y de difusión.
+Nota: Para diseñar una red de otro tamaño, es necesario conocer el numero de miembros de esta, que sea menor a una potencia de dos. Es decir, el numero de mienbros debe ser menor a 4, 8, 16, etc. Asi mismo, se debe considerar restar 2 para reservar las direcciones de red y de difusión.
+
+## Laboratorio 2 : Agregando una red local IPv4
+
+Continuando con el laboratorio vamos analizar la red local para esta red vamos usar direciones de clases c, supongamos que tenemos una red con 100 equipos para diseñar correctamente esta red tenemos que considera que la potencia de 2 mas cercana es 128, que representa 7 bits para la direccion de red, los mismos que estan en el cuarto octeto lo que nos deja 1 bit para la red, los que sumandos a los tres primeros octetos nos dan 25 para la direccion de red de clase C, tenemos las direcciones:
+
+* Dirección de red (network)          : 192.168.0.0/25
+* Direccion del primer miembro (host) : 192.168.0.1
+* Dirección del ultimo miembro (host) : 192.168.0.126
+* Dirección de difusión (broadcast)   : 192.168.0.127
+
 
