@@ -55,7 +55,7 @@ Nota: Para diseñar una red de otro tamaño, es necesario conocer el numero de m
 
 ## Laboratorio 2 : Agregando una red local IPv4
 
-Continuando con el laboratorio vamos analizar la red local, para esta parte de la red usaremos las direciones de clases C, considerando que tenemos 100 miembros dentro de la red, hacemos corresponder al menor numero que sea potencia de dos (2, 4, 8, ...). Para este ejemplo es 128, pues es el mas cercano al numero 100. Dado que 128 miembros se puede representar con 7 bits en binario.
+Continuando con el laboratorio vamos analizar la red local, para esta parte de la red usaremos las direciones de clases C, considerando que tenemos 100 miembros dentro de la red, hacemos corresponder al menor numero que sea potencia de dos (2, 4, 8, ...). Para este ejemplo es 128, pues es el mas cercano al numero 100. Dado que 128 miembros se puede representar con 7 bits en binario.  
 Las direcciones privadas de clase C, tiene 24 bits para redes y 8 bits para hosts, dado que solo necesitamos 7 bits de los 8 bits para hosts, el bit restantes bien a formar parte de la direccion de red, o más preciso es la dirección de subred, que ahora tiene 25 bits en luegar de 24 bits y esto se representa "192.168.0.0/25"
 
 * Dirección de red (network)          : 192.168.0.0/25
