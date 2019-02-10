@@ -70,7 +70,7 @@ Ahora, utilizamos el simulador para red "packetracer", para construir, configura
 enable 
 configure terminal
  interface Gig0/0
-  ip address 192.168.0.1 255.255.255.252
+  ip address 192.168.0.1 255.255.255.128
   no shutdown
   exit
  exit
