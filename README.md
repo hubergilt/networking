@@ -87,3 +87,11 @@ configure terminal
  exit
 write mem
 ```
+
+## Gráfica de la direccion ip para el host PC0
+
+![Gráfica de la direccion ip para el host PC0](lab2/pc0-ipcfg.png "Gráfica de la direccion ip para el host PC0")
+
+## Gráfica de red privada local clase C
+
+![Gráfica de red privada local clase C](lab2/local.png "Gráfica de red privada local clase C")
