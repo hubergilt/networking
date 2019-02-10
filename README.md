@@ -76,3 +76,15 @@ configure terminal
  exit
 write mem
 ```
+
+## Configuración de la direción IP en el Switch 0
+```
+enable 
+configure terminal
+ interface Gig0/2
+  ip address 192.168.0.2 255.255.255.128
+  no shutdown
+  exit
+ exit
+write mem
+```
