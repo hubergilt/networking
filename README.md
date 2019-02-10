@@ -62,3 +62,17 @@ Las direcciones privadas de clase C, tiene 24 bits para redes y 8 bits para host
 * Direccion del primer miembro (host) : 192.168.0.1
 * Dirección del ultimo miembro (host) : 192.168.0.126
 * Dirección de difusión (broadcast)   : 192.168.0.127
+
+Ahora, utilizamos el simulador para red "packetracer", para construir, configurar y probar la red privada local de clase C.
+
+## Configuración de la direción IP en el Router A
+```
+enable 
+configure terminal
+ interface Gig0/0
+  ip address 192.168.0.1 255.255.255.252
+  no shutdown
+  exit
+ exit
+write mem
+```
