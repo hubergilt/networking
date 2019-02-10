@@ -95,3 +95,13 @@ write mem
 ## Gráfica de red privada local clase C
 
 ![Gráfica de red privada local clase C](lab2/local.png "Gráfica de red privada local clase C")
+
+## Laboratorio 3 : Uniendo dos redes locales de forma remota
+
+
+## Laboratorio 4 : Configurando redes VLAN en ambas sedes
+
+
+## Laboratorio 5 : Enrutamiento vector distancia y estado del enlace
+
+
