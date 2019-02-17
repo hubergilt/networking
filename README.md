@@ -136,6 +136,7 @@ configure terminal
   ip route 192.168.0.0 255.255.255.128 10.10.0.1
   exit
 write mem
+```
 
 ## Laboratorio 4 : Configurando redes VLAN en ambas sedes
 
