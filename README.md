@@ -138,6 +138,11 @@ configure terminal
 write mem
 ```
 
+## Gráfica de dos redes privadas clase C, unidos por una red privada clase B 
+
+![Gráfica de dos redes privadas clase C](lab3/conex2locals.png "Gráfica de dos redes privadas clase C")
+
+
 ## Laboratorio 4 : Configurando redes VLAN en ambas sedes
 
 
