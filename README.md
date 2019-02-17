@@ -169,11 +169,10 @@ write mem
 
 ```
 enable
-  configure terminal
-    vlan database
-      vlan 10 name administracion
-      vlan 20 name sistemas
-      exit
+  vlan database
+    vlan 10 name administracion
+    vlan 20 name sistemas
+    exit
 write mem
 ```
 
