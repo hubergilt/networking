@@ -172,10 +172,8 @@ enable
   configure terminal
     vlan database
       vlan 10 name administracion
-        exit
       vlan 20 name sistemas
-        exit
-    exit
+      exit
 write mem
 ```
 
