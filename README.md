@@ -117,6 +117,25 @@ configure terminal
 write mem
 ```
 
+## Configuración de rutas estáticas entre las redes 192.168.0.0/25 y 192.168.1.128/25.
+
+Para el Router A ...
+
+```
+enable
+configure terminal
+  ip route 192.168.1.128 255.255.255.128 10.10.0.1
+  exit
+write mem
+```
+Para el Router B ...
+
+```
+enable
+configure terminal
+  ip route 192.168.1.0 255.255.255.128 10.10.0.2
+  exit
+write mem
 
 ## Laboratorio 4 : Configurando redes VLAN en ambas sedes
 
