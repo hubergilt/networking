@@ -197,10 +197,10 @@ enable
 configure terminal
   ip routing
      interface vlan 10
-       ip address 192.168.0.0 255.255.255.128
+       ip address 192.168.0.1 255.255.255.128
        exit
      interface vlan 20
-       ip address 192.168.0.128 255.255.255.128
+       ip address 192.168.0.129 255.255.255.128
        exit
   exit
 write mem
