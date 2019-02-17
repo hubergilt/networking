@@ -24,7 +24,7 @@ Desarrollando para el caso de un red privada clase A, tenemos dos direcciones de
 
 Utilizamos el simulador de red "packetracer", para construir, configurar y probar la red punto a punto clase A.
 
-## Configuración de la direción IP en el Router A
+### Configuración de la direción IP en el Router A
 ```
 enable 
 configure terminal
@@ -36,7 +36,7 @@ configure terminal
 write mem
 ```
 
-## Configuración de la direción IP en el Router B
+### Configuración de la direción IP en el Router B
 ```
 enable 
 configure terminal
@@ -47,7 +47,7 @@ configure terminal
  exit
 write mem
 ```
-## Gráfica de red privada de punto a punto tipo clase A
+### Gráfica de red privada de punto a punto tipo clase A
 
 ![Gráfica de red privada de punto a punto clase A](lab1/p2p.png "Gráfica de red privada de punto a punto clase A")
 
@@ -65,7 +65,7 @@ Las direcciones privadas de clase C, tiene 24 bits para redes y 8 bits para host
 
 Ahora, utilizamos el simulador para red "packetracer", para construir, configurar y probar la red privada local de clase C.
 
-## Configuración de la direción IP en el Router A
+### Configuración de la direción IP en el Router A
 ```
 enable 
 configure terminal
@@ -77,7 +77,7 @@ configure terminal
 write mem
 ```
 
-## Configuración de la direción IP en el Switch 0 (opcional)
+### Configuración de la direción IP en el Switch 0 (opcional)
 ```
 enable 
 configure terminal
@@ -88,11 +88,11 @@ configure terminal
 write mem
 ```
 
-## Gráfica de la direccion ip para el host PC0
+### Gráfica de la direccion ip para el host PC0
 
 ![Gráfica de la direccion ip para el host PC0](lab2/pc0-ipcfg.png "Gráfica de la direccion ip para el host PC0")
 
-## Gráfica de red privada local clase C
+### Gráfica de red privada local clase C
 
 ![Gráfica de red privada local clase C](lab2/local.png "Gráfica de red privada local clase C")
 
@@ -105,7 +105,7 @@ Consideremos que el segundo local tambien tiene una capaciadad para 100 equipos.
 * Dirección del ultimo miembro (host) : 192.168.0.254
 * Dirección de difusión (broadcast)   : 192.168.0.255
 
-## Configuración de la direción IP en el Router B
+### Configuración de la direción IP en el Router B
 ```
 enable 
 configure terminal
@@ -117,7 +117,7 @@ configure terminal
 write mem
 ```
 
-## Configuración de rutas estáticas entre las redes 192.168.0.0/25 y 192.168.1.128/25.
+### Configuración de rutas estáticas entre las redes 192.168.0.0/25 y 192.168.1.128/25.
 
 Para el Router A ...
 
@@ -138,7 +138,7 @@ configure terminal
 write mem
 ```
 
-## Gráfica de dos redes privadas clase C, unidos por una red privada clase B 
+### Gráfica de dos redes privadas clase C, unidos por una red privada clase B 
 
 ![Gráfica de dos redes privadas clase C](lab3/conex2locals.png "Gráfica de dos redes privadas clase C")
 
