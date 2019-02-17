@@ -197,7 +197,7 @@ enable
       switchport mode access
       switchport access vlan 20
       exit
-    interface Gig0/0
+    interface Gig0/2
       switchport mode trunk
       exit
   exit
