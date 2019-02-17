@@ -181,21 +181,24 @@ write mem
 ```
 enable 
   configure terminal
-    interface f0/1
+    interface Fa0/1
       switchport mode access
       switchport access vlan 10
       exit
-    interface f0/2
+    interface Fa0/2
       switchport mode access
       switchport access vlan 10
       exit
-    interface f0/3
+    interface Fa0/3
       switchport mode access
       switchport access vlan 20
       exit
-    interface f0/4
+    interface Fa0/4
       switchport mode access
       switchport access vlan 20
+      exit
+    interface Gig0/0
+      switchport mode trunk
       exit
   exit
 write mem
@@ -206,13 +209,12 @@ write mem
 ```
 enable 
 configure terminal
-  ip routing
-     interface vlan 10
-       ip address 192.168.0.1 255.255.255.128
-       exit
-     interface vlan 20
-       ip address 192.168.0.129 255.255.255.128
-       exit
+   interface vlan 10
+     ip address 192.168.0.1 255.255.255.128
+     exit
+   interface vlan 20
+     ip address 192.168.0.129 255.255.255.128
+     exit
   exit
 write mem
 ```
