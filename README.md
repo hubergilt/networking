@@ -96,7 +96,26 @@ write mem
 
 ![Gráfica de red privada local clase C](lab2/local.png "Gráfica de red privada local clase C")
 
-## Laboratorio 3 : Uniendo dos redes locales de forma remota
+## Laboratorio 3 : Agregando segunda red local y uniendo ambas redes de forma remota
+
+Consideremos que el segundo local tambien tiene una capaciadad para 100 equipos.
+
+* Dirección de red (network)          : 192.168.0.128/25
+* Direccion del primer miembro (host) : 192.168.0.129
+* Dirección del ultimo miembro (host) : 192.168.0.254
+* Dirección de difusión (broadcast)   : 192.168.0.255
+
+## Configuración de la direción IP en el Router B
+```
+enable 
+configure terminal
+ interface Gig0/1
+  ip address 192.168.0.129 255.255.255.128
+  no shutdown
+  exit
+ exit
+write mem
+```
 
 
 ## Laboratorio 4 : Configurando redes VLAN en ambas sedes
