@@ -165,25 +165,44 @@ enable
 write mem
 ```
 
-### Configurando los puertos para las dos redes VLANS en el Switch 0
+### Configurando las interfaces fisicas dentro de una red VLAN en el Switch 0
 
 ```
 enable 
   configure terminal
-  interface f0/1
-  switchport mode access
-  switchport access vlan 10
-  interface f0/2
-  switchport mode access
-  switchport access vlan 10
-  interface f0/3
-  switchport mode access
-  switchport access vlan 20
-  interface f0/4
-  switchport mode access
-  switchport access vlan 20
+    interface f0/1
+      switchport mode access
+      switchport access vlan 10
+      exit
+    interface f0/2
+      switchport mode access
+      switchport access vlan 10
+      exit
+    interface f0/3
+      switchport mode access
+      switchport access vlan 20
+      exit
+    interface f0/4
+      switchport mode access
+      switchport access vlan 20
+      exit
   exit
-exit
+write mem
+```
+
+### Configurando las direcciones de puerta de enlace en las interfaces VLANS en el Switch 0
+
+```
+enable 
+configure terminal
+  ip routing
+     interface vlan 10
+       ip address 192.168.0.0 255.255.255.128
+       exit
+     interface vlan 20
+       ip address 192.168.0.128 255.255.255.128
+       exit
+  exit
 write mem
 ```
 
