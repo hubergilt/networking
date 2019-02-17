@@ -145,7 +145,47 @@ write mem
 
 ## Laboratorio 4 : Configurando redes VLAN en ambas sedes
 
+Considerando las dos redes VLAN, tenemos las siguientes direcciones:
+
+* VLAN 10: Administración, 192.168.0.0/25
+* VLAN 20: Sistemas, 192.168.0.128/25
+
+### Creando las dos redes VLANS
+
+```
+enable
+  configure terminal
+    vlan 10
+      name administracion
+      exit
+    vlan 20
+      name sistemas
+      exit
+    exit
+write mem
+```
+
+### Configurando los puertos para las dos redes VLANS
+
+```
+enable 
+  configure terminal
+  interface f0/1
+  switchport mode access
+  switchport access vlan 10
+  interface f0/2
+  switchport mode access
+  switchport access vlan 10
+  interface f0/3
+  switchport mode access
+  switchport access vlan 20
+  interface f0/4
+  switchport mode access
+  switchport access vlan 20
+  exit
+exit
+write mem
+```
 
 ## Laboratorio 5 : Enrutamiento vector distancia y estado del enlace
-
 
