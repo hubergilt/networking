@@ -124,7 +124,7 @@ Para el Router A ...
 ```
 enable
 configure terminal
-  ip route 192.168.0.128 255.255.255.128 10.10.0.2
+  ip route 192.168.0.128 255.255.255.128 10.0.0.2
   exit
 write mem
 ```
@@ -133,7 +133,7 @@ Para el Router B ...
 ```
 enable
 configure terminal
-  ip route 192.168.0.0 255.255.255.128 10.10.0.1
+  ip route 192.168.0.0 255.255.255.128 10.0.0.1
   exit
 write mem
 ```
