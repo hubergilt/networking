@@ -150,7 +150,7 @@ Considerando las dos redes VLAN, tenemos las siguientes direcciones:
 * VLAN 10: Administración, 192.168.0.0/25
 * VLAN 20: Sistemas, 192.168.0.128/25
 
-### Creando las dos redes VLANS
+### Creando las dos redes VLANS en el Switch 0
 
 ```
 enable
@@ -165,7 +165,7 @@ enable
 write mem
 ```
 
-### Configurando los puertos para las dos redes VLANS
+### Configurando los puertos para las dos redes VLANS en el Switch 0
 
 ```
 enable 
