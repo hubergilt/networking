@@ -165,6 +165,21 @@ enable
 write mem
 ```
 
+### Creando las dos redes VLANS en el Router A
+
+```
+enable
+  vlan database
+    vlan 10 
+    name administracion
+      exit
+    vlan 20
+      name sistemas
+      exit
+    exit
+write mem
+```
+
 ### Configurando las interfaces fisicas dentro de una red VLAN en el Switch 0
 
 ```
